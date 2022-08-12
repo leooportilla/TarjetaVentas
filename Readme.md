@@ -1,5 +1,7 @@
 # Frontend Mentor - Product preview card component solution
 
+### Summary
+Tarjeta de presentacion para la venta de un producto, contiene foto, precio y boton
 ### Screenshot
 ![](./Capturas/Escritorio.png)
 ![](./Capturas/Movil.png)
