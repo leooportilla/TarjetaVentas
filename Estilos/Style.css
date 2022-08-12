@@ -1,0 +1,239 @@
+:root {
+    --CianOscuro: rgb(60, 128, 103);
+    --CianMuyOscuros: rgb(44, 92, 74);
+    --Nata: rgb(242, 235, 227);
+    --AzulOscuro: rgb(28, 35, 43);
+    --AzulGrisaceo: rgb(108, 114, 137);
+    --White: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Nata);
+    font-size: 14px;
+}
+
+.Escritorio {
+    display: none;
+}
+
+.Movil {
+    margin: 5% auto;
+    background-color: var(--White);
+    border-radius: 1em;
+    width: 35vh;
+    height: 100%;
+    box-shadow: 0 0 0.625em 0.25em rgba(0, 0, 0, 0.2);
+}
+
+.Perfume {
+    width: 100%;
+    margin: 0;
+    border-radius: 1em 0.625em 0px 0px;
+}
+
+.Nombre {
+    margin: 2.5em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25rem;
+    color: var(--AzulGrisaceo);
+}
+
+.Titulos {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 0.6em;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+.Parrafos {
+    margin: 1.8em;
+    margin-top: 0.6em;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: var(--AzulGrisaceo);
+    line-height: 1.5;
+}
+
+.Precios {
+    display: flex;
+    margin: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.Precio1 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.5em;
+    color: var(--CianOscuro);
+    margin-top: 0;
+    margin-right: 1.25em;
+}
+
+.Precio2 {
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    margin: auto 0;
+    color: var(--AzulGrisaceo);
+    font-weight: 500;
+}
+
+.Contenedor {
+    display: flex;
+    margin: 1.5em;
+    margin-top: 0;
+    justify-content: center;
+}
+
+.Boton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    background-color: var(--CianOscuro);
+    color: var(--White);
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    transition: .3s;
+}
+
+.Botones {
+    margin-left: 2%;
+    background-color: inherit;
+    color: var(--White);
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+}
+
+.Atributos {
+    display: flex;
+    justify-content: center;
+}
+
+.Letras {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.5em;
+}
+
+.Atributos a {
+    color: var(--AzulOscuro);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.5rem;
+    margin-left: 0.125em;
+}
+
+.Boton:hover {
+    background-color: var(--CianMuyOscuros);
+}
+
+.Boton:active {
+    width: 80%;
+}
+
+
+@media (min-width:1440px) {
+    .Movil {
+        display: none;
+    }
+
+    .Escritorio {
+        display: flex;
+        margin: 5% auto;
+        margin-bottom: 2em;
+        background-color: var(--White);
+        border-radius: 1em;
+        width: 100vh;
+        height: 70vh;
+        box-shadow: 0 0 0.625em 0.25em rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+    }
+
+    .Contenedor1 {
+        width: 100%;
+    }
+
+    .Perfume {
+        display: flex;
+        height: 100%;
+        border-radius: 1em 0 0 1em;
+    }
+
+    .Nombre {
+        margin: 3em;
+        margin-bottom: 2em;
+        font-size: 1em;
+        letter-spacing: 0.7em;
+    }
+
+    .Titulos {
+        margin: 0 2.5em 0 1em;
+        font-size: 3em;
+        line-height: 1;
+    }
+
+    .Parrafos {
+        margin: 2em 4em 0 2.5em;
+        font-size: 1.3em;
+        line-height: 1.6;
+    }
+
+    .Precios {
+        display: inline-flex;
+        margin-left: 3em;
+        margin-top: 3em;
+        margin-bottom: 2.5em;
+    }
+
+    .Precio1 {
+        margin-right: 0.5em;
+        font-size: 3em;
+    }
+
+    .Precio2 {
+        font-size: 1.2em;
+    }
+
+    .Contenedor {
+        justify-content: center;
+    }
+
+    .Boton {
+        width: 90%;
+        margin-left: 1em;
+        padding: 1.5em;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .Boton:hover {
+        background-color: var(--CianMuyOscuros);
+    }
+    .Boton:active{
+        width: 80%;
+    }
+    .Botones {
+        font-size: 1.3em;
+    }
+    .Carrito {
+        width: 1.3em;
+    }
+    .Letras {
+        font-size: 1em;
+    }
+    
+    .Atributos a {
+        font-size: 1rem;
+    }
+}
